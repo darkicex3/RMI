@@ -6,16 +6,15 @@ class Client extends Thread {
 
 	public static void main(String argv[]) throws Exception {
 		String sentence = null; //phrase écris par l'utilisateur
-		KeyboardListener keyboardListener; //lit les entrées au clavier
+		KeyboardListener keyboardListener;
 		ServerListener serverListener; //Ecoute du serveur
 
-		Scanner entrada = new Scanner (System.in);
+		Scanner entrada = new Scanner (System.in); //lit les entrées au clavier
 		
-		System.out.println("Options:");
-		System.out.println("help: show help");
-		System.out.println("@user: send a private message");
-		System.out.println("name: - change name");
-		System.out.println("quit - quit chat");
+		System.out.println("Options du serveur:");
+		System.out.println("@user: envoyer message privé");
+		System.out.println("name: - changer de nom");
+		System.out.println("quit - quitter le chat");
 
 		System.out.println("Entrer l'IP du serveur ou tapez local pour utiliser l'adresse local");
 		String server = entrada.nextLine();
@@ -83,11 +82,10 @@ class KeyboardListener extends Thread {
 			while (true) {
 				sentence = inFromUser.readLine();
 				if(sentence.equals("help")) {
-					System.out.println("Options:");
-					System.out.println("help: show help");
-					System.out.println("@user: send a private message");
-					System.out.println("name: - change name");
-					System.out.println("quit - quit chat");
+					System.out.println("Options du serveur:");
+					System.out.println("@user: envoyez message privé");
+					System.out.println("name: - changer de name");
+					System.out.println("quit - quitter le chat");
 				}
 				else {
 					outToServer.writeBytes(sentence + '\n');
