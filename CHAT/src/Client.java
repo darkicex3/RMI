@@ -5,9 +5,9 @@ import java.util.Scanner;
 class Client extends Thread {
 
 	public static void main(String argv[]) throws Exception {
-		String sentence = null;
-		KeyboardListener keyboardListener;
-		ServerListener serverListener;
+		String sentence = null; //phrase écris par l'utilisateur
+		KeyboardListener keyboardListener; //lit les entrées au clavier
+		ServerListener serverListener; //Ecoute du serveur
 
 		Scanner entrada = new Scanner (System.in);
 		
@@ -17,7 +17,7 @@ class Client extends Thread {
 		System.out.println("name: - change name");
 		System.out.println("quit - quit chat");
 
-		System.out.println("Server`s ip or 'local' to chat locally");
+		System.out.println("Entrer l'IP du serveur ou tapez local pour utiliser l'adresse local");
 		String server = entrada.nextLine();
 
 		if (server.equals("local")) {
