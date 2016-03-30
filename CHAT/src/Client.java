@@ -11,12 +11,12 @@ class Client extends Thread {
 
 		Scanner entrada = new Scanner (System.in); //lit les entrées au clavier
 		
-		System.out.println("Options du serveur:");
-		System.out.println("@user: envoyer message privé");
-		System.out.println("name: - changer de nom");
-		System.out.println("quit - quitter le chat");
+		System.out.println("Server Option:");
+		System.out.println("@user: Send a private message !");
+		System.out.println("name: - Change your name !");
+		System.out.println("quit - Quit");
 
-		System.out.println("Entrer l'IP du serveur ou tapez local pour utiliser l'adresse local");
+		System.out.println("Enter IP address or 'local.");
 		String server = entrada.nextLine();
 
 		if (server.equals("local")) {
