@@ -23,10 +23,10 @@ class Client extends Thread {
 			server = "127.0.0.1";
 		}
 
-		Socket clientSocket = new Socket(server, 6789);
+		Socket clientSocket = new Socket(server, 6789); //Création de la socket client
 
-		keyboardListener = new KeyboardListener(sentence, clientSocket);
-		serverListener = new ServerListener(clientSocket);
+		keyboardListener = new KeyboardListener(sentence, clientSocket); //Création du keyboardListener
+		serverListener = new ServerListener(clientSocket); //Création du ServeurListener
 
 		keyboardListener.start();
 		serverListener.start();
