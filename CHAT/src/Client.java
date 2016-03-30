@@ -28,7 +28,7 @@ class Client extends Thread {
 		keyboardListener = new KeyboardListener(sentence, clientSocket); //Création du keyboardListener
 		serverListener = new ServerListener(clientSocket); //Création du ServeurListener
 
-		keyboardListener.start();
+		keyboardListener.start(); //
 		serverListener.start();
 		keyboardListener.join();
 		serverListener.join();
