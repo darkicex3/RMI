@@ -4,7 +4,6 @@
 package client;
 
 import interfaces.CAdresseInterface;
-
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
@@ -12,7 +11,7 @@ import java.util.Scanner;
 public class CAdresseClient {
     public static void main(String args[]) {
         try {
-            String adrServeur = "139.124.187.167";
+            String adrServeur = "139.124.187.162";
             Registry registre = LocateRegistry.getRegistry(adrServeur, 50099);
             CAdresseInterface stub = (CAdresseInterface) registre.lookup("cadresse");
             String msg;

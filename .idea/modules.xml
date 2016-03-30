@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/RMI.iml" filepath="$PROJECT_DIR$/RMI.iml" />
       <module fileurl="file://$PROJECT_DIR$/RMI/RMI.iml" filepath="$PROJECT_DIR$/RMI/RMI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RMI_2/RMIS.iml" filepath="$PROJECT_DIR$/RMI_2/RMIS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RMI_1/RMI_1.iml" filepath="$PROJECT_DIR$/RMI_1/RMI_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/SMIC.iml" filepath="$PROJECT_DIR$/SMIC.iml" />
     </modules>
   </component>
