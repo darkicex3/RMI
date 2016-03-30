@@ -14,7 +14,9 @@ class Server {
 		connections = new ArrayList<Connection>();
 		Integer count = 0;
 
-		host = InetAddress.getLocalHost().getHostAddress();
+		//host = InetAddress.getLocalHost().getHostAddress(); //Serveur en local
+		System.out.println(host);
+		host = InetAddress.getByName("139.124.187.162").toString();
 		System.out.println(host);
 
 		welcomeSocket = new ServerSocket(6789);
