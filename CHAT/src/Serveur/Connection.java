@@ -1,3 +1,5 @@
+package Serveur;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -41,7 +43,7 @@ class Connection extends Thread {
                 if (inMessage.equals("quit")) {
                     outMessage = "BYE";
                     outToClients.get(id).writeBytes(outMessage);
-                    System.out.println("Client disconnected");
+                    System.out.println("Client.Client disconnected");
                     break;
 
                 } else if (inMessage.startsWith("@")) {

@@ -1,7 +1,10 @@
+package Serveur;
+
+import Serveur.Connection;
+
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
-import java.util.Enumeration;
 
 class Server {
 
